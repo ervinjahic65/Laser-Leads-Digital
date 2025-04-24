@@ -30,3 +30,7 @@ html {
 form button:hover {
     cursor: pointer;
 }
+
+span.comp-info {
+    font-size: 13px;
+}
