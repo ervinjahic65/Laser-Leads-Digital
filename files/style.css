@@ -5,33 +5,38 @@ body {
 
 /* --- Basic Background Image Setup --- */
 header {
-    /* Replace 'path/to/your/image.jpg' with the actual path or URL to your image */
+    /* Keep your original image settings */
     background-image: url('./hero.jpg');
-  
-    /* Ensures the image covers the entire header area */
     background-size: cover;
-  
-    /* Prevents the image from repeating if it's smaller than the header */
     background-repeat: no-repeat;
-  
-    /* Centers the image within the header */
     background-position: center center;
+    
+    color: white; /* Your text color */
   
-    /* --- Optional Enhancements --- */
-  
-    /* Add a semi-transparent overlay for better text readability (adjust color and opacity) */
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path/to/your/image.jpg'); */
-  
-    /* Create a parallax effect where the background stays fixed while scrolling */
-    /* background-attachment: fixed; */
-  
-    /* Ensure text color is still appropriate (Tailwind's text-white should handle this, but good for redundancy) */
-    color: white;
-  }
-  
-  header {
+    /* Add position relative to contain the pseudo-element */
+    position: relative;
+    
+    /* Ensure content sits above the overlay */
+    z-index: 1; 
+
     padding-top: 6rem;    
     padding-bottom: 7rem; 
+  }
+  
+  header::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Position it relative to the header */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    /* The overlay color: Black with 50% opacity. Adjust as needed. */
+    /* Try rgba(0, 0, 0, 0.5) for dark, rgba(255, 255, 255, 0.3) for light */
+    background-color: rgba(0, 0, 0, 0.5); 
+    
+    /* Place the overlay behind the header's content */
+    z-index: -1; 
   }
   
   @media (min-width: 768px) {
