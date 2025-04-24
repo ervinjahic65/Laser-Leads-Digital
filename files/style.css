@@ -3,6 +3,44 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+/* --- Basic Background Image Setup --- */
+header {
+    /* Replace 'path/to/your/image.jpg' with the actual path or URL to your image */
+    background-image: url('./hero.jpg');
+  
+    /* Ensures the image covers the entire header area */
+    background-size: cover;
+  
+    /* Prevents the image from repeating if it's smaller than the header */
+    background-repeat: no-repeat;
+  
+    /* Centers the image within the header */
+    background-position: center center;
+  
+    /* --- Optional Enhancements --- */
+  
+    /* Add a semi-transparent overlay for better text readability (adjust color and opacity) */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path/to/your/image.jpg'); */
+  
+    /* Create a parallax effect where the background stays fixed while scrolling */
+    /* background-attachment: fixed; */
+  
+    /* Ensure text color is still appropriate (Tailwind's text-white should handle this, but good for redundancy) */
+    color: white;
+  }
+  
+  header {
+    padding-top: 6rem;    
+    padding-bottom: 7rem; 
+  }
+  
+  @media (min-width: 768px) {
+    header {
+      padding-top: 8rem;    
+      padding-bottom: 10rem; 
+    }
+  }
+
 i.fa-chevron-down, .faq-question {
     cursor: pointer;
 }
