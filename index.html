@@ -14,37 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="files/style.css">
 
-    <style>
-        /* Set base font family */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        /* Basic styling for the FAQ accordion */
-        .faq-answer {
-            display: none; /* Hidden by default */
-            max-height: 0; /* Start collapsed */
-            overflow: hidden; /* Hide content when collapsed */
-            transition: max-height 0.4s ease-out; /* Smooth transition for opening/closing */
-        }
-
-        /* Styling for an active/open FAQ item */
-        .faq-item.active .faq-answer {
-            display: block; /* Show the answer */
-            max-height: 1000px; /* Allow it to expand (adjust if needed for very long answers) */
-        }
-
-        /* Rotate the chevron icon when FAQ is open */
-        .faq-item.active .faq-icon {
-            transform: rotate(180deg);
-        }
-
-        /* Smooth scroll behavior for anchor links */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
 
