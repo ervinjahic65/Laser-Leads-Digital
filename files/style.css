@@ -76,3 +76,14 @@ form button:hover {
 span.comp-info {
     font-size: 13px;
 }
+
+.logo {
+    width: 185px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    p.adv {
+        left: 65% !important;
+    }
+}
