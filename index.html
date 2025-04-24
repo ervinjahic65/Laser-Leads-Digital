@@ -3,9 +3,524 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Earn Money Watching Ads - AdWatcher - Your Time, Your Rewards</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Set base font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Basic styling for the FAQ accordion */
+        .faq-answer {
+            display: none; /* Hidden by default */
+            max-height: 0; /* Start collapsed */
+            overflow: hidden; /* Hide content when collapsed */
+            transition: max-height 0.4s ease-out; /* Smooth transition for opening/closing */
+        }
+
+        /* Styling for an active/open FAQ item */
+        .faq-item.active .faq-answer {
+            display: block; /* Show the answer */
+            max-height: 1000px; /* Allow it to expand (adjust if needed for very long answers) */
+        }
+
+        /* Rotate the chevron icon when FAQ is open */
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Smooth scroll behavior for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="font-bold text-2xl text-blue-600 hover:text-blue-700 transition">AdWatcher</a>
+                </div>
+
+                <div class="hidden md:flex md:items-center md:space-x-6 lg:space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Features</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">How It Works</a>
+                    <a href="#payouts" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Payouts</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Testimonials</a>
+                    <a href="#faq" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">FAQ</a>
+                    <a href="#register" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-300 shadow-sm">Sign Up</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars block h-6 w-6 text-xl"></i>
+                        </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#features" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Features</a>
+                <a href="#how-it-works" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">How It Works</a>
+                <a href="#payouts" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Payouts</a>
+                <a href="#testimonials" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
+                <a href="#faq" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">FAQ</a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                 <div class="px-5">
+                     <a href="#register" class="block w-full text-center bg-blue-600 text-white px-4 py-2 rounded-md text-base font-medium hover:bg-blue-700 transition duration-300 shadow-sm">Sign Up Now</a>
+                 </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white pt-24 pb-28 md:pt-32 md:pb-40">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-5 leading-tight tracking-tight">
+                Get Paid for Your Attention
+            </h1>
+            <p class="text-lg md:text-xl mb-10 text-blue-100 max-w-3xl mx-auto font-light">
+                Watch engaging video ads from brands you might actually like and earn real cash or gift cards. Turn your downtime into passive income effortlessly with AdWatcher.
+            </p>
+            <a href="#register" class="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition duration-300 text-lg shadow-lg transform hover:scale-105">
+                Start Earning Today <i class="fas fa-arrow-right ml-2 text-sm"></i>
+            </a>
+            <p class="mt-5 text-sm text-blue-200 opacity-90">
+                No complex tasks, no hidden fees. Just watch & earn.
+            </p>
+        </div>
+    </header>
+
+    <section id="features" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                Why Earn with AdWatcher?
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                    <div class="flex items-center mb-4">
+                         <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-dollar-sign text-2xl text-green-600"></i>
+                         </div>
+                         <h3 class="text-xl font-semibold text-gray-700">Effortless Income</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">Generate passive income with minimal effort. The more relevant ads you watch, the more rewards you accumulate. Turn those spare moments into real financial growth.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                     <div class="flex items-center mb-4">
+                         <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-clock text-2xl text-blue-600"></i>
+                         </div>
+                         <h3 class="text-xl font-semibold text-gray-700">Total Flexibility</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">No rigid schedules or commitments. Watch ads whenever and wherever suits you – on your commute, during breaks, or while relaxing at home. Fit earning into your life.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                     <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-film text-2xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-700">Diverse & Relevant Ads</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">Discover advertisements often tailored to your interests based on optional preferences. Our wide range makes watching less of a chore and potentially more informative.</p>
+                </div>
+                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                     <div class="flex items-center mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-check-circle text-2xl text-yellow-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-700">Simple & Accessible</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">No specialized skills or knowledge required. If you can watch a video online, you can earn with AdWatcher. Accessible to anyone with a stable internet connection.</p>
+                </div>
+                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                     <div class="flex items-center mb-4">
+                        <div class="bg-red-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-shield-alt text-2xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-700">Reliable Payouts</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">We prioritize a trustworthy and transparent payment system. Receive your hard-earned rewards reliably through popular methods. (Standard processing time: up to 72 hours).</p>
+                </div>
+                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                     <div class="flex items-center mb-4">
+                        <div class="bg-teal-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-users text-2xl text-teal-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-700">Supportive Community</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">Join thousands of fellow earners! Optionally connect, share tips, discuss experiences, and support each other on the journey to maximizing rewards (Community features coming soon!).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="py-20 md:py-28 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                Start Earning in 3 Simple Steps
+            </h2>
+            <div class="relative">
+                 <div class="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-blue-200" style="z-index: 0;"></div>
+
+                <div class="relative flex flex-col md:flex-row justify-around items-start md:items-center gap-10 md:gap-8" style="z-index: 1;">
+                    <div class="text-center max-w-xs w-full md:w-auto bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-5 text-2xl font-bold shadow-lg ring-4 ring-blue-100">1</div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-700">Sign Up Free</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Create your secure AdWatcher account in just a couple of minutes. It's quick, straightforward, and completely free to join.</p>
+                    </div>
+
+                    <div class="text-center max-w-xs w-full md:w-auto bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-6 md:mt-0">
+                        <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-5 text-2xl font-bold shadow-lg ring-4 ring-blue-100">2</div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-700">Watch Ads</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Log in, navigate to the 'Earn Rewards' section, browse available video ads, and start watching the ones that catch your eye.</p>
+                    </div>
+
+                    <div class="text-center max-w-xs w-full md:w-auto bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-6 md:mt-0">
+                         <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-5 text-2xl font-bold shadow-lg ring-4 ring-blue-100">3</div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-700">Get Paid</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Accumulate points or cash value for every ad you watch. Once you reach the minimum threshold, withdraw your rewards easily.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="text-center mt-16">
+                <a href="#register" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 text-lg shadow-md transform hover:scale-105">
+                    Join Now & Start Watching Ads
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="potential" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                <div class="lg:w-1/2 w-full">
+                     <img src="https://placehold.co/600x450/e0f2fe/0ea5e9?text=Visualize+Your+Earnings" alt="Illustration showing potential earnings growth" class="rounded-lg shadow-xl w-full h-auto object-cover border-4 border-blue-100" onerror="this.src='https://placehold.co/600x450/e2e8f0/94a3b8?text=Image+Load+Error'; this.alt='Placeholder Image Error'">
+                </div>
+                <div class="lg:w-1/2 w-full">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+                        What Can You Realistically Earn?
+                    </h2>
+                    <p class="text-gray-600 mb-5 text-lg leading-relaxed">
+                        Let's be clear: watching ads won't replace your full-time income. However, it's a genuinely fantastic and simple way to earn extra cash, gift cards, or other rewards during your downtime – time you might otherwise spend scrolling!
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Your potential earnings depend directly on factors like the number of ads available to you (which can vary by region and profile) and, most importantly, how consistently you engage with the platform.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Earn points or direct value for every single ad you successfully watch to completion.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-gift text-blue-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Redeem your accumulated balance for popular options like PayPal cash or various gift cards (Amazon, etc.). See Payouts section below!</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Keep an eye out for bonus opportunities, limited-time higher-paying ads, and referral rewards for inviting friends.</span>
+                        </li>
+                    </ul>
+                    <p class="text-gray-800 font-semibold text-lg">
+                        The formula is simple: Consistent Watching = Consistent Rewards.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="payouts" class="py-20 md:py-28 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                Flexible & Convenient Payouts
+            </h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed">
+                We understand you want easy access to your earnings. That's why we offer several popular and reliable ways to redeem your rewards once you reach the minimum payout threshold.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+                    <img src="https://placehold.co/100x60/0070ba/ffffff?text=PayPal" alt="PayPal Logo" class="mx-auto mb-5 h-12" onerror="this.src='https://placehold.co/100x60/cccccc/666666?text=PayPal+Err'; this.alt='PayPal Placeholder'">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-700">PayPal Cash</h3>
+                    <p class="text-gray-600 text-sm">Get your earnings sent directly to your PayPal account. A widely trusted and convenient option for cash rewards.</p>
+                    <p class="text-xs text-gray-500 mt-4">(Minimum payout: $5.00)</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+                     <img src="https://placehold.co/100x60/ff9900/ffffff?text=Amazon" alt="Amazon Logo" class="mx-auto mb-5 h-12" onerror="this.src='https://placehold.co/100x60/cccccc/666666?text=Amazon+Err'; this.alt='Amazon Placeholder'">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-700">Amazon Gift Cards</h3>
+                    <p class="text-gray-600 text-sm">Redeem your points for Amazon gift cards and shop millions of items online. Perfect for treating yourself!</p>
+                     <p class="text-xs text-gray-500 mt-4">(Minimum payout: $5.00)</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+                     <img src="https://placehold.co/100x60/cccccc/ffffff?text=More+Cards" alt="Gift Card Icon" class="mx-auto mb-5 h-12" onerror="this.src='https://placehold.co/100x60/cccccc/666666?text=Cards+Err'; this.alt='Gift Cards Placeholder'">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-700">Various Gift Cards</h3>
+                    <p class="text-gray-600 text-sm">We're always expanding! Look out for other popular gift card options for retail, restaurants, and entertainment.</p>
+                     <p class="text-xs text-gray-500 mt-4">(Minimums may vary)</p>
+                </div>
+            </div>
+            <p class="text-center text-gray-500 mt-12 text-sm">
+                Payout processing typically takes 48-72 hours after request. Ensure your account details are accurate.
+            </p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                Hear From Our Happy Earners
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-100 transform hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/50x50/cbd5e1/475569?text=AS" alt="User Avatar Arun Sharma" class="w-12 h-12 rounded-full mr-4 border-2 border-white shadow-sm" onerror="this.src='https://placehold.co/50x50/cbd5e1/475569?text=Err'; this.alt='Placeholder Avatar Error'">
+                        <div>
+                            <p class="font-semibold text-gray-700">Arun Sharma</p>
+                            <p class="text-sm text-yellow-500">★★★★★</p> </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">"This app is a total game-changer! Watching ads is actually enjoyable sometimes, and the payouts are always prompt. It's the perfect way to earn some extra cash during my free time."</p>
+                    <p class="text-xs text-gray-500 text-right mt-3">- Verified User, Jan 2024</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-100 transform hover:scale-105 transition-transform duration-300">
+                     <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/50x50/e2e8f0/475569?text=PK" alt="User Avatar Priya Kapoor" class="w-12 h-12 rounded-full mr-4 border-2 border-white shadow-sm" onerror="this.src='https://placehold.co/50x50/e2e8f0/475569?text=Err'; this.alt='Placeholder Avatar Error'">
+                        <div>
+                            <p class="font-semibold text-gray-700">Priya Kapoor</p>
+                            <p class="text-sm text-yellow-500">★★★★★</p> </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">"I was a bit skeptical at first, but AdWatcher has genuinely exceeded my expectations. The earning process is transparent and straightforward. It's a great way to unwind and earn simultaneously."</p>
+                     <p class="text-xs text-gray-500 text-right mt-3">- Verified User, Feb 2024</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-100 transform hover:scale-105 transition-transform duration-300">
+                     <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/50x50/dbeafe/3b82f6?text=RM" alt="User Avatar Rohan Mehra" class="w-12 h-12 rounded-full mr-4 border-2 border-white shadow-sm" onerror="this.src='https://placehold.co/50x50/dbeafe/3b82f6?text=Err'; this.alt='Placeholder Avatar Error'">
+                        <div>
+                            <p class="font-semibold text-gray-700">Rohan Mehra</p>
+                            <p class="text-sm text-yellow-500">★★★★★</p> </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">"What a fantastic app! I love how it combines a bit of entertainment with a genuine earning opportunity. Super easy to use, great rewards. I've already recommended it to all my friends!"</p>
+                     <p class="text-xs text-gray-500 text-right mt-3">- Verified User, Mar 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="py-20 md:py-28 bg-gradient-to-br from-teal-50 to-cyan-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                Tips to Maximize Your Earnings
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-200">
+                     <i class="fas fa-calendar-check text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">Be Consistent</h3>
+                    <p class="text-gray-600 text-sm">Log in regularly. Even a few minutes each day adds up significantly over time. Consistency is key to seeing results.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-200">
+                     <i class="fas fa-bell text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">Enable Notifications</h3>
+                    <p class="text-gray-600 text-sm">Allow app notifications (optional) to be alerted about new high-paying ads or special bonus opportunities as they become available.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-200">
+                     <i class="fas fa-user-check text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">Complete Your Profile</h3>
+                    <p class="text-gray-600 text-sm">Providing optional demographic info can sometimes unlock more relevant (and potentially higher-paying) ads targeted to you.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-200">
+                     <i class="fas fa-share-alt text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">Refer Friends</h3>
+                    <p class="text-gray-600 text-sm">Utilize our referral program! Earn bonus rewards for every friend who signs up using your link and starts earning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="py-20 md:py-28 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">
+                    Ready to Start Earning?
+                </h2>
+                <p class="text-center text-gray-600 mb-8">
+                    Sign up in under a minute and get paid for your attention!
+                </p>
+                <form id="registration-form" novalidate>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 mb-4">
+                        <div>
+                            <label for="first-name" class="block text-gray-700 text-sm font-medium mb-1">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required autocomplete="given-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-400" placeholder="Enter your first name">
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-gray-700 text-sm font-medium mb-1">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required autocomplete="family-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-400" placeholder="Enter your last name">
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <label for="email" class="block text-gray-700 text-sm font-medium mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" required autocomplete="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-400" placeholder="you@example.com">
+                    </div>
+                     <div class="mb-6">
+                        <label class="flex items-center text-gray-600">
+                            <input type="checkbox" id="terms" name="terms" required class="mr-2 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                            <span class="text-sm select-none">I have read and agree to the <a href="/terms" target="_blank" class="text-blue-600 hover:underline font-medium">Terms and Conditions</a> and <a href="/privacy" target="_blank" class="text-blue-600 hover:underline font-medium">Privacy Policy</a>.</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300 text-lg shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Create My Free Account
+                    </button>
+                </form>
+                 <p id="form-message" class="mt-5 text-center text-sm font-medium h-5"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="security" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Your Security & Privacy Matter</h2>
+                 <p class="text-gray-600 mb-4 leading-relaxed">We take the security of your account and the privacy of your data seriously. Here’s how we protect you:</p>
+                 <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6">
+                     <li><strong>Secure Sign-Up:</strong> Industry-standard practices are used during registration and login.</li>
+                     <li><strong>Data Protection:</strong> We adhere to strict data privacy regulations (like GDPR/CCPA where applicable). Your personal information is not sold to third-party advertisers.</li>
+                     <li><strong>Anonymized Data:</strong> Any demographic data used for ad targeting is anonymized and aggregated.</li>
+                     <li><strong>Transparent Policies:</strong> Our <a href="/privacy" target="_blank" class="text-blue-600 hover:underline">Privacy Policy</a> clearly outlines how your data is used and protected.</li>
+                     <li><strong>Secure Payouts:</strong> We partner with reputable payment processors to ensure your earnings are transferred securely.</li>
+                 </ul>
+                 <p class="text-gray-700 font-medium">Focus on earning, knowing your information is handled responsibly.</p>
+            </div>
+             <div class="md:w-1/2 flex justify-center">
+                 <img src="https://placehold.co/400x400/cffafe/06b6d4?text=Security+Focused" alt="Security shield icon" class="rounded-full shadow-lg max-w-sm w-full h-auto object-cover border-4 border-cyan-100" onerror="this.src='https://placehold.co/400x400/e2e8f0/94a3b8?text=Image+Error'; this.alt='Placeholder Security Image Error'">
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 md:py-28 bg-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                Frequently Asked Questions
+            </h2>
+            <div class="space-y-5">
+                <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">How exactly do I start earning money watching ads?</span>
+                        <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">It's simple! 1) Sign up for your free AdWatcher account. 2) Log in and navigate to the "Earn Rewards" or "Watch Ads" section in your dashboard. 3) Browse the list of available video ads. 4) Click on an ad and watch it fully (usually there's a timer or completion indicator). 5) Your earnings (points or cash value) will automatically be credited to your account balance upon successful completion.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">What devices can I use to watch ads on AdWatcher?</span>
+                         <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">You can watch ads and earn rewards on most modern devices that have a stable internet connection and a web browser. This includes desktop computers (Windows, Mac, Linux), laptops, tablets (iPad, Android tablets), and smartphones (iOS and Android). Our website is designed to be responsive for optimal viewing on all screen sizes.</p>
+                    </div>
+                </div>
+                 <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">How long does it take to process payments and receive my rewards?</span>
+                         <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">Once you've reached the minimum payout threshold and requested a withdrawal, our team reviews and processes the request. Typically, this process takes between 48 to 72 hours (2-3 business days). Delivery time for electronic payments like PayPal is usually instant after processing, while gift card codes are typically emailed within that timeframe.</p>
+                    </div>
+                </div>
+                 <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">Are there absolutely any fees associated with joining or earning?</span>
+                         <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">No, absolutely not! Joining AdWatcher and earning rewards by watching ads is completely free. There are no hidden charges, subscription costs, or membership fees required to participate or to cash out your earnings. Our revenue comes from the advertisers who pay to show you their ads.</p>
+                    </div>
+                </div>
+                 <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">Can I refer my friends to AdWatcher and earn extra rewards?</span>
+                         <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">Yes, definitely! We have an active referral program. You can find your unique referral link in your account dashboard. Share this link with friends and family. When they sign up using your link and start actively watching ads and earning, you'll receive bonus rewards credited to your account as a thank you!</p>
+                    </div>
+                </div>
+                 <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">Why aren't there many ads available for me sometimes?</span>
+                         <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">The number of available ads can fluctuate based on several factors, including your geographic location, demographic profile (if provided), current advertiser campaigns, and the time of day. Advertisers target specific audiences, so availability isn't always constant for every user. Check back regularly, as new ad campaigns start frequently.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-400 pt-16 pb-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-10">
+                <div class="lg:col-span-2">
+                    <h4 class="text-lg font-semibold text-white mb-4">About AdWatcher</h4>
+                    <p class="text-sm leading-relaxed mb-4">AdWatcher provides a simple and legitimate platform for users to earn real rewards by engaging with video advertisements. Turn your spare time into cash or gift cards effortlessly. Simple, flexible, and rewarding.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-white transition duration-150 ease-in-out"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" aria-label="Twitter" class="text-gray-400 hover:text-white transition duration-150 ease-in-out"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" aria-label="Instagram" class="text-gray-400 hover:text-white transition duration-150 ease-in-out"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-white transition duration-150 ease-in-out"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#features" class="hover:text-white hover:underline">Features</a></li>
+                        <li><a href="#how-it-works" class="hover:text-white hover:underline">How It Works</a></li>
+                         <li><a href="#payouts" class="hover:text-white hover:underline">Payout Options</a></li>
+                        <li><a href="#testimonials" class="hover:text-white hover:underline">Testimonials</a></li>
+                        <li><a href="#faq" class="hover:text-white hover:underline">FAQ</a></li>
+                        <li><a href="#register" class="hover:text-white hover:underline">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Legal & Info</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/terms" target="_blank" class="hover:text-white hover:underline">Terms of Use</a></li>
+                        <li><a href="/privacy" target="_blank" class="hover:text-white hover:underline">Privacy Policy</a></li>
+                        <li><a href="/cookies" target="_blank" class="hover:text-white hover:underline">Cookie Policy</a></li>
+                         <li><a href="/advertisers" target="_blank" class="hover:text-white hover:underline">For Advertisers</a></li>
+                         <li><a href="/contact" target="_blank" class="hover:text-white hover:underline">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-envelope mr-2 opacity-70"></i> support@adwatcher.example.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2 opacity-70"></i> 123 Ad Lane, Suite 100<br><span class="ml-5">Moneyville, MV 45678</span></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center text-sm">
+                <p>&copy; <span id="current-year"></span> AdWatcher. All rights reserved. A subsidiary of ExampleCorp.</p>
+                 <p class="mt-2 opacity-80">Disclaimer: Earnings are dependent on user activity, ad availability provided by advertisers, and adherence to terms of service. AdWatcher does not guarantee specific income levels.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
