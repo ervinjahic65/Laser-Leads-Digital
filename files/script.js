@@ -79,38 +79,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- Basic Form Handling (Example) ---
-    const registrationForm = document.getElementById('registration-form');
-    const formMessage = document.getElementById('form-message');
-
-    if (registrationForm && formMessage) {
-        registrationForm.addEventListener('submit', (event) => {
-            event.preventDefault(); // Prevent actual form submission for this example
-
-            // Basic validation check (ensure terms are checked)
-            const termsCheckbox = document.getElementById('terms');
-            if (!termsCheckbox || !termsCheckbox.checked) {
-                formMessage.textContent = 'Please agree to the Terms and Conditions.';
-                formMessage.className = 'mt-4 text-center text-sm text-red-600'; // Error style
-                return; // Stop submission
-            }
-
-            // Simulate successful submission
-            formMessage.textContent = 'Thank you for registering! (This is a demo)';
-            formMessage.className = 'mt-4 text-center text-sm text-green-600'; // Success style
-
-            // Optionally clear the form
-            // registrationForm.reset();
-
-            // In a real application, you would send the data to a server here.
-            // Example:
-            // const formData = new FormData(registrationForm);
-            // fetch('/your-api-endpoint', { method: 'POST', body: formData })
-            //   .then(response => response.json())
-            //   .then(data => { console.log('Success:', data); /* Handle success */ })
-            //   .catch((error) => { console.error('Error:', error); /* Handle error */ });
-        });
-    } else {
-         console.warn("Registration form or form message element not found.");
-    }
 
 });
