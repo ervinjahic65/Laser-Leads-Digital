@@ -3,6 +3,10 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+i.fa-chevron-down, .faq-question {
+    cursor: pointer;
+}
+
 /* Basic styling for the FAQ accordion */
 .faq-answer {
     display: none; /* Hidden by default */
