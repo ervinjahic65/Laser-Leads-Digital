@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Laser Leads Digital</title>
+
+    <script src="files/browser@4.js"></script>
+
+    <link rel="stylesheet" href="files/all.min.css" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="files/style.css">
+    <link rel="icon" type="image/png" href="files/favicon.png" sizes="16x16">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+    <p class="adv" style="position: absolute; z-index: 99999999; left: 50%; transform: translateX(-50%); text-align: center; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">
+        광고
+    </p>
+    <nav class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="font-bold text-2xl text-blue-600 hover:text-blue-700 transition">
+                        <img class="logo" src="files/logo.png" alt="로고">
+                    </a>
+                </div>
+
+                <div class="hidden md:flex md:items-center md:space-x-6 lg:space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">기능</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">작동 방식</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">사용 후기</a>
+                    <a href="#faq" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">자주 묻는 질문</a>
+                    <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-300 shadow-sm">문의하기</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">기본 메뉴 열기</span>
+                        <i class="fas fa-bars block h-6 w-6 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#features" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">기능</a>
+                <a href="#how-it-works" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">작동 방식</a>
+                <a href="#testimonials" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">사용 후기</a>
+                <a href="#faq" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">자주 묻는 질문</a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                 <div class="px-5">
+                     <a href="#register" class="block w-full text-center bg-blue-600 text-white px-4 py-2 rounded-md text-base font-medium hover:bg-blue-700 transition duration-300 shadow-sm">지금 가입하기</a>
+                 </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-white pt-24 pb-28 md:pt-32 md:pb-40">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-5 leading-tight tracking-tight">
+                Laser Leads Digital
+            </h1>
+            <p class="text-lg md:text-xl mb-10 text-blue-100 max-w-3xl mx-auto font-light">
+                관심 분야의 브랜드 동영상 콘텐츠를 발견하고 현금 또는 기프트 카드와 같은 보상을 받으세요. Laser Leads Digital은 여가 시간을 유용하게 활용할 수 있는 간편한 방법을 제공합니다.
+            </p>
+            <a href="#register" class="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition duration-300 text-lg shadow-lg transform hover:scale-105">
+                시작하기 <i class="fas fa-arrow-right ml-2 text-sm"></i>
+            </a>
+        </div>
+    </header>
+
+    <section id="features" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                왜 Laser Leads Digital로 수익을 얻어야 하나요?
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                    <div class="flex items-center mb-4">
+                         <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-dollar-sign text-2xl text-green-600"></i>
+                         </div>
+                         <h3 class="text-xl font-semibold text-gray-700">간단한 수익 획득</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">여유 시간에 최소한의 노력으로 보상을 받을 수 있습니다. 관련 광고를 시청하면 보상을 누적할 수 있습니다. 여가 시간을 활용하는 간단한 방법입니다.</p>
+                </div>
+    
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                     <div class="flex items-center mb-4">
+                         <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-clock text-2xl text-blue-600"></i>
+                         </div>
+                         <h3 class="text-xl font-semibold text-gray-700">유연한 수익 획득</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">일정에 맞춰 언제든 시청하고 수익을 얻으세요 – 고정된 약속은 없습니다. 출퇴근길, 휴식 시간 또는 집에서의 여유 시간에 Laser Leads Digital을 이용하세요. 일상 속에 수익 활동을 통합하세요.</p>
+                </div>
+    
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                     <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-film text-2xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-700">관련 콘텐츠</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">선택적 선호도에 따라 관심사에 맞춘 광고를 탐색하세요. 다양한 광고는 시청을 더 흥미롭고 유익하게 만듭니다.</p>
+                </div>
+    
+                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                     <div class="flex items-center mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-check-circle text-2xl text-yellow-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-700">간편하고 접근 용이</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">전문 기술이나 지식이 필요 없습니다. 온라인으로 동영상을 볼 수 있다면 누구나 Laser Leads Digital로 수익을 얻을 수 있습니다. 안정적인 인터넷 연결만 있으면 이용 가능합니다.</p>
+                </div>
+    
+                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                     <div class="flex items-center mb-4">
+                        <div class="bg-red-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-shield-alt text-2xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-700">신뢰할 수 있는 지급</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">투명하고 신뢰할 수 있는 결제 과정을 제공합니다. 인기 있는 방법을 통해 안정적으로 보상을 받으세요. (표준 처리 시간은 일반적으로 최대 72시간이 소요됩니다.)</p>
+                </div>
+    
+                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                     <div class="flex items-center mb-4">
+                        <div class="bg-teal-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-users text-2xl text-teal-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-700">지원 커뮤니티</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">예정된 커뮤니티 공간에서 다른 사용자와 소통하세요. 팁을 공유하고 경험을 논의하며 서로를 지원하세요 (커뮤니티 기능은 현재 개발 중입니다).</p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="py-20 md:py-28 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                시작이 간단합니다
+            </h2>
+            <div class="relative">
+                 <div class="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-blue-200" style="z-index: 0;"></div>
+    
+                <div class="relative flex flex-col md:flex-row justify-around items-start md:items-center gap-10 md:gap-8" style="z-index: 1;">
+                    
+                    <div class="text-center max-w-xs w-full md:w-auto bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-5 text-2xl font-bold shadow-lg ring-4 ring-blue-100">1</div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-700">무료 가입</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">몇 초 만에 Laser Leads Digital 계정을 생성하세요. 빠르고 간편하며 완전 무료로 가입할 수 있습니다.</p>
+                    </div>
+    
+                    <div class="text-center max-w-xs w-full md:w-auto bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-6 md:mt-0">
+                        <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-5 text-2xl font-bold shadow-lg ring-4 ring-blue-100">2</div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-700">광고 시청</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">로그인 후 '보상 받기' 영역으로 이동하세요. 제공된 동영상 광고를 둘러보고 관심 있는 광고를 시청할 수 있습니다.</p>
+                    </div>
+    
+                    <div class="text-center max-w-xs w-full md:w-auto bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-6 md:mt-0">
+                         <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-5 text-2xl font-bold shadow-lg ring-4 ring-blue-100">3</div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-700">보상 획득</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">시청한 광고에 대해 보상(포인트 또는 현금 가치)을 누적하게 됩니다. 최소 금액에 도달하면 손쉽게 수익을 교환할 수 있습니다.</p>
+                    </div>
+    
+                </div>
+            </div>
+             <div class="text-center mt-16">
+                <a href="#register" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 text-lg shadow-md transform hover:scale-105">
+                    시작할 준비가 되셨나요? 무료로 가입하기
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="potential" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                
+                <div class="lg:w-1/2 w-full">
+                     <img src="files/earn.jpg" alt="잠재적 수익 증가를 보여주는 일러스트" class="rounded-lg shadow-xl w-full h-auto object-cover border-4 border-blue-100">
+                </div>
+                
+                <div class="lg:w-1/2 w-full">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+                        현실적으로 얼마나 벌 수 있나요?
+                    </h2>
+                    <p class="text-gray-600 mb-5 text-lg leading-relaxed">
+                        광고 시청이 전일제 수입을 대체하지는 않지만, 여가 시간(예: SNS 스크롤 시간 등)을 활용해 현금 또는 기프트 카드와 같은 추가 보상을 얻을 수 있는 실용적이고 간단한 방법입니다.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        잠재 수익은 지역 및 프로필에 따라 제공되는 광고 수와, 무엇보다도 플랫폼에 얼마나 꾸준히 참여하는지에 따라 달라집니다.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">모든 광고를 끝까지 시청할 때마다 포인트 또는 현금 가치를 적립하세요.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-gift text-blue-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">누적된 잔액은 PayPal 현금 또는 다양한 기프트 카드(예: 아마존) 등 인기 옵션으로 교환할 수 있습니다. 자세한 내용은 지급 섹션을 참조하세요.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">보너스 기회, 한시적 고수익 광고 및 친구 초대 보상 기회를 놓치지 마세요.</span>
+                        </li>
+                    </ul>
+                    </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                사용자 후기
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-100 transform hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-center mb-4">
+                        <div>
+                            <p class="font-semibold text-gray-700">김민준</p>
+                            <p class="text-sm text-yellow-500">★★★★★</p> 
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">"이 앱에 정말 감명받았습니다. 광고 시청이 생각보다 괜찮고, 결제도 안정적으로 빠르게 처리됩니다. 여가 시간에 추가 수익을 얻기에 좋은 방법입니다."</p>
+                </div>
+    
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-100 transform hover:scale-105 transition-transform duration-300">
+                     <div class="flex items-center mb-4">
+                        <div>
+                            <p class="font-semibold text-gray-700">박서연</p>
+                            <p class="text-sm text-yellow-500">★★★★★</p> 
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">"처음에는 약간 회의적이었지만, Laser Leads Digital은 제 기대를 진심으로 뛰어넘었습니다. 수익 과정이 투명하고 간단합니다. 휴식을 취하면서 동시에 수익을 얻기에 훌륭한 방법입니다."</p>
+                </div>
+    
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-100 transform hover:scale-105 transition-transform duration-300">
+                     <div class="flex items-center mb-4">
+                        <div>
+                            <p class="font-semibold text-gray-700">이지훈</p>
+                            <p class="text-sm text-yellow-500">★★★★★</p> 
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">"정말 유용한 앱입니다. 광고를 시청하고 대가를 받을 수 있다는 점이 좋습니다. 인터페이스도 사용하기 쉬우며 보상도 괜찮습니다. 이미 몇몇 친구들에게 추천했습니다."</p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="py-20 md:py-28 bg-gradient-to-br from-teal-50 to-cyan-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                더 많은 수익을 위한 팁
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-200">
+                     <i class="fas fa-calendar-check text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">꾸준한 활동</h3>
+                    <p class="text-gray-600 text-sm">짧은 시간이라도 꾸준히 활동하면 시간이 지남에 따라 보상을 더 많이 얻을 수 있습니다. 지속적인 참여가 더 나은 결과로 이어집니다.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-200">
+                     <i class="fas fa-bell text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">선택적 알림</h3>
+                    <p class="text-gray-600 text-sm">새로운 광고 기회나 잠재적 보너스가 발생했을 때 알림을 받을 수 있도록 앱 알림을 허용하는 것을 고려하세요.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-200">
+                     <i class="fas fa-user-check text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">프로필 정보</h3>
+                    <p class="text-gray-600 text-sm">프로필의 선택적 항목을 완성하면 더 관련성 높은 광고에 매칭되어 다양한 보상 수준을 제공받을 수 있습니다.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-200">
+                     <i class="fas fa-share-alt text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">추천 보상</h3>
+                    <p class="text-gray-600 text-sm">추천 프로그램을 이용해 보세요. 친구가 귀하의 링크로 가입해 수익을 얻기 시작하면 추가 보상을 받을 수 있습니다.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="py-20 md:py-28 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">
+                    수익을 시작할 준비가 되셨나요?
+                </h2>
+                <form id="registration-form">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 mb-4">
+                        <div>
+                            <label for="first-name" class="block text-gray-700 text-sm font-medium mb-1">이름</label>
+                            <input type="text" id="first-name" name="first-name" required autocomplete="given-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-400" placeholder="이름을 입력하세요">
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-gray-700 text-sm font-medium mb-1">성</label>
+                            <input type="text" id="last-name" name="last-name" required autocomplete="family-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-400" placeholder="성을 입력하세요">
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <label for="email" class="block text-gray-700 text-sm font-medium mb-1">이메일 주소</label>
+                        <input type="email" id="email" name="email" required autocomplete="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-400" placeholder="you@example.com">
+                    </div>
+                    <div class="mb-5">
+                        <label for="textarea" class="block text-gray-700 text-sm font-medium mb-1">메시지를 남겨주세요</label>
+                        <textarea id="textarea" name="textarea" required autocomplete="textarea" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-400" placeholder="메시지를 입력하세요"></textarea>
+                    </div>
+                     <div class="mb-6">
+                        <label class="flex items-center text-gray-600">
+                            <input type="checkbox" id="terms" name="terms" required class="mr-2 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                            <span class="text-sm select-none">약관 및 <a href="privacy.html" target="_blank" class="text-blue-600 hover:underline font-medium">개인정보처리방침</a>을 읽었으며 동의합니다.</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300 text-lg shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        제출
+                    </button>
+                </form>
+                <script>
+                    document.getElementById("registration-form").addEventListener("submit", function (e) {
+                        e.preventDefault();
+                
+                        const formElement = document.getElementById("registration-form");
+                
+                        formElement.innerHTML = '<img src="files/loading.gif" width="80" alt="로딩 중...">';
+                
+                        formElement.style.display = 'flex';
+                        formElement.style.justifyContent = 'center';
+                        formElement.style.alignItems = 'center';
+                
+                        setTimeout(() => {
+                            formElement.innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700; text-align: center;">Laser Leads Digital에 등록해 주셔서 감사합니다. 곧 저희 팀이 연락하여 옵션을 안내해 드리겠습니다.</p>';
+                        }, 2000);
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <section id="security" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            
+            <div class="md:w-1/2">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">귀하의 보안 및 개인정보가 중요합니다</h2>
+                 <p class="text-gray-600 mb-4 leading-relaxed">계정 보안 및 데이터 개인정보 보호를 중요하게 생각합니다. 정보를 보호하기 위해 다음과 같은 조치를 취하고 있습니다:</p>
+                 <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6">
+                     <li><strong>안전한 가입:</strong> 가입 및 로그인 과정에서 업계 표준 관행을 사용합니다.</li>
+                     <li><strong>데이터 보호:</strong> GDPR/CCPA 등 관련 개인정보 보호 규정을 준수합니다. 개인 정보는 제3자 광고주에게 판매되지 않습니다.</li>
+                     <li><strong>익명화된 데이터:</strong> 광고 타게팅에 사용될 수 있는 인구통계학적 데이터는 익명화 및 집계 방식으로 처리됩니다.</li>
+                     <li><strong>투명한 정책:</strong> <a href="terms.html" target="_blank" class="text-blue-600 hover:underline">개인정보처리방침</a>에 데이터 사용 및 보호 방침을 명확히 안내합니다.</li>
+                     <li><strong>안전한 지급:</strong> 신뢰할 수 있는 결제 대행사와 제휴하여 안전한 수단으로 수익을 전송합니다.</li>
+                 </ul>
+                 <p class="text-gray-700 font-medium">수익 활동에 집중하세요. 귀하의 정보는 책임감 있게 처리됩니다.</p>
+            </div>
+            
+             <div class="md:w-1/2 flex justify-center">
+                 <img src="files/security.jpg" alt="보안 방패 아이콘" class="rounded-full shadow-lg max-w-sm w-full h-auto object-cover border-4 border-cyan-100">
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 md:py-28 bg-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                자주 묻는 질문
+            </h2>
+            <div class="space-y-5">
+                
+                <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">광고 시청으로 어떻게 수익을 시작하나요?</span>
+                        <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">간단합니다: 1) 무료 Laser Leads Digital 계정에 가입하세요. 2) 로그인 후 '보상 받기' 또는 '광고 시청' 섹션으로 이동하세요. 3) 제공된 동영상 광고를 탐색하세요. 4) 광고를 클릭하고 끝까지 시청하세요(타이머 또는 완료 표시를 확인하세요). 5) 성공적으로 완료되면 보상(포인트 또는 현금 가치)이 계정에 적립됩니다.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">Laser Leads Digital을 어떤 기기에서 사용할 수 있나요?</span>
+                         <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">데스크톱(Windows, Mac, Linux), 노트북, 태블릿(iPad, Android), 스마트폰(iOS, Android) 등 안정적인 인터넷 연결과 웹 브라우저가 있는 대부분의 최신 기기에서 사용할 수 있습니다. Laser Leads Digital 웹사이트는 다양한 화면 크기에 최적화되어 있습니다.</p>
+                    </div>
+                </div>
+    
+                 <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">지급 처리에는 얼마나 걸리나요?</span>
+                         <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">출금 요청(최소 금액 도달 시) 후 팀이 검토 및 처리하며, 일반적으로 48~72시간(2~3영업일) 이내에 완료됩니다. PayPal 등 전자 결제는 처리 후 즉시 수령되며, 기프트 카드 코드는 해당 기간 내에 이메일로 발송됩니다.</p>
+                    </div>
+                </div>
+    
+                 <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">가입 또는 수익 활동에 수수료가 있나요?</span>
+                         <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">전혀 없습니다. Laser Leads Digital 가입 및 보상 활동은 완전 무료입니다. 숨겨진 비용, 구독료, 멤버십 비용이 없습니다. 수익은 광고주로부터 발생합니다.</p>
+                    </div>
+                </div>
+    
+                 <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">친구 추천으로 보상을 받을 수 있나요?</span>
+                         <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">예! 추천 프로그램을 운영합니다. 대시보드에서 고유 추천 링크를 찾고 공유하세요. 친구가 해당 링크로 가입하여 활동을 시작하면 추가 보상이 적립됩니다.</p>
+                    </div>
+                </div>
+    
+                 <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">왜 항상 많은 광고가 보이지 않나요?</span>
+                         <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">광고 가용성은 위치, 인구통계학적 프로필(제공 시), 현재 광고주의 요구 사항, 시간대 등의 요인에 따라 변동될 수 있습니다. 광고주는 특정 대상에게 타겟팅하므로 가용성이 다릅니다. 새로운 광고 캠페인이 자주 출시되니 정기적으로 확인하세요.</p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-400 pt-16 pb-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-10">
+                <div class="lg:col-span-2">
+                    <h4 class="text-lg font-semibold text-white mb-4">Laser Leads Digital 소개</h4>
+                    <p class="text-sm leading-relaxed mb-4">Laser Leads Digital은 사용자가 동영상 광고를 시청하여 보상을 받을 수 있는 간단한 플랫폼을 제공합니다. 여유 시간을 활용하여 현금 또는 기프트 카드 보상을 받을 수 있는 쉬운 방법입니다.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">빠른 링크</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#features" class="hover:text-white hover:underline">기능</a></li>
+                        <li><a href="#how-it-works" class="hover:text-white hover:underline">작동 방식</a></li>
+                        <li><a href="#testimonials" class="hover:text-white hover:underline">사용 후기</a></li>
+                        <li><a href="#faq" class="hover:text-white hover:underline">자주 묻는 질문</a></li>
+                        <li><a href="#register" class="hover:text-white hover:underline">가입하기</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">법적 정보</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="terms.html" target="_blank" class="hover:text-white hover:underline">약관</a></li>
+                        <li><a href="privacy.html" target="_blank" class="hover:text-white hover:underline">개인정보처리방침</a></li>
+                        <li><a href="about.html" target="_blank" class="hover:text-white hover:underline">회사 소개</a></li>
+                        <li><a href="contact.html" target="_blank" class="hover:text-white hover:underline">문의하기</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">회사</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <span class="comp-info">
+                                사업자등록번호 - 332-08-18990 <br>
+                                주소 - 서울특별시 강남구 테헤란로 12, 서울빌딩 15층 <br>
+                                전화 - 02-5510-0991
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center text-sm">
+                <p>© <span id="current-year"></span> Laser Leads Digital. 판권 소유.</p>
+                <p class="mt-2 opacity-80">공지: 수익은 사용자 활동, 광고 가용성 및 서비스 약관 준수 여부에 따라 달라질 수 있습니다. Laser Leads Digital은 특정 수익 수준을 보장하지 않습니다.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="files/script.js"></script>
+</body>
+
+</html>
