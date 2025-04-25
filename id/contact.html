@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Hubungi Kami – Laser Leads Digital</title>
+
+    <script src="files/browser@4.js"></script>
+    <link rel="stylesheet" href="files/all.min.css" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="files/style.css">
+    <link rel="icon" type="image/png" href="files/favicon.png" sizes="16x16">
+
+    <style>
+        /* Base font setting */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Custom styles for form elements */
+        .form-input-custom,
+        .form-textarea-custom {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background-color: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.375rem;
+            transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            box-sizing: border-box;
+        }
+
+        .form-input-custom:focus,
+        .form-textarea-custom:focus {
+            outline: none;
+            border-color: transparent;
+            box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #818cf8;
+        }
+
+        .form-textarea-custom {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-label-custom {
+            display: block;
+            color: #374151;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .submit-button-custom {
+            display: inline-block;
+            width: 100%;
+            background-color: #4f46e5;
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .submit-button-custom:hover {
+            background-color: #4338ca;
+        }
+
+        .submit-button-custom:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #6366f1;
+        }
+    </style>
+
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased font-sans">
+    <nav class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="font-bold text-2xl text-blue-600 hover:text-blue-700 transition">
+                        <img class="logo" src="files/logo.png" alt="Logo"> 
+                    </a>
+                </div>
+
+                <div class="hidden md:flex md:items-center md:space-x-6 lg:space-x-8">
+                    <a href="index.html#features" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Fitur</a>
+                    <a href="index.html#how-it-works" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Cara Kerja</a>
+                    <a href="index.html#testimonials" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Testimoni</a>
+                    <a href="index.html#faq" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Pertanyaan Umum</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Tentang Kami</a>
+                    <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-300 shadow-sm">Hubungi Kami</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Buka menu utama</span>
+                        <i class="fas fa-bars block h-6 w-6 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html#features" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Fitur</a>
+                <a href="index.html#how-it-works" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Cara Kerja</a>
+                <a href="index.html#testimonials" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Testimoni</a>
+                <a href="index.html#faq" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Pertanyaan Umum</a>
+                <a href="about.html" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Tentang Kami</a>
+                <a href="contact.html" class="text-blue-600 bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6 max-w-2xl">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-100">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Kirim Pesan Kepada Kami</h2>
+                    <p class="text-center text-gray-600 mb-8">
+                        Kami senang mendengar kabar dari Anda! Isi formulir di bawah dan kami akan menghubungi Anda secepat mungkin.
+                    </p>
+                    <form id="form" class="space-y-6">
+                        <div>
+                            <label for="name" class="form-label-custom">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required autocomplete="name" class="form-input-custom" placeholder="Nama Anda">
+                        </div>
+                        <div>
+                            <label for="email" class="form-label-custom">Alamat Email</label>
+                            <input type="email" id="email" name="email" required autocomplete="email" class="form-input-custom" placeholder="Email Anda">
+                        </div>
+                        <div>
+                            <label for="subject" class="form-label-custom">Subjek</label>
+                            <input type="text" id="subject" name="subject" required class="form-input-custom" placeholder="Perihal Pesan Anda">
+                        </div>
+                        <div>
+                            <label for="message" class="form-label-custom">Pesan Anda</label>
+                            <textarea id="message" name="message" rows="5" required class="form-textarea-custom" placeholder="Silakan ketik pesan Anda di sini..."></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="submit-button-custom">
+                                Kirim Pesan
+                            </button>
+                        </div>
+                    </form>
+                    <script>
+                        document.getElementById("form").addEventListener("submit", function (e) {
+                            e.preventDefault();
+                            const container = this.parentNode;
+                            container.innerHTML = '<div class="flex justify-center items-center h-64"><img src="files/loading.gif" width="80" alt="Memuat..."></div>';
+                            setTimeout(() => {
+                                container.innerHTML = '<div class="text-center py-10"><i class="fas fa-check-circle text-5xl text-green-500 mb-4"></i><p style="font-size: 18px; color:black; font-weight: 700; text-align: center;">Terima kasih telah menghubungi kami! Pesan Anda telah kami terima dan akan segera kami balas.</p></div>';
+                            }, 2000);
+                        });
+                    </script>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 pt-16 pb-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-10">
+                <div class="lg:col-span-2">
+                    <h4 class="text-lg font-semibold text-white mb-4">Tentang Laser Leads Digital</h4>
+                    <p class="text-sm leading-relaxed mb-4">Laser Leads Digital menyediakan platform sederhana dan sah bagi pengguna untuk mendapatkan imbalan nyata dengan menonton iklan video. Ubah waktu luang Anda menjadi uang tunai atau kartu hadiah dengan mudah. Sederhana, fleksibel, dan bermanfaat.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html#features" class="hover:text-white hover:underline">Fitur</a></li>
+                        <li><a href="index.html#how-it-works" class="hover:text-white hover:underline">Cara Kerja</a></li>
+                        <li><a href="index.html#testimonials" class="hover:text-white hover:underline">Testimoni</a></li>
+                        <li><a href="index.html#faq" class="hover:text-white hover:underline">Pertanyaan Umum</a></li>
+                        <li><a href="index.html#register" class="hover:text-white hover:underline">Daftar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Legal & Info</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="terms.html" target="_blank" class="hover:text-white hover:underline">Syarat & Ketentuan</a></li>
+                        <li><a href="privacy.html" target="_blank" class="hover:text-white hover:underline">Kebijakan Privasi</a></li>
+                        <li><a href="about.html" target="_blank" class="hover:text-white hover:underline">Tentang Kami</a></li>
+                        <li><a href="contact.html" target="_blank" class="hover:text-white hover:underline">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Perusahaan</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <span class="comp-info">
+                                NIB – 990722006 <br>
+                                Alamat – Jl. Jend. Sudirman Kav. 52-53, <br>
+                                Jakarta Selatan 12910, Indonesia <br>
+                                Telepon +62-21-009872238 
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center text-sm">
+                <p>&copy; <span id="current-year"></span> Laser Leads Digital. Semua hak dilindungi.</p>
+                <p class="mt-2 opacity-80">Penafian: Penghasilan tergantung aktivitas pengguna, ketersediaan iklan, dan kepatuhan terhadap ketentuan layanan. Laser Leads Digital tidak menjamin tingkat pendapatan tertentu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="files/script.js"></script>
+
+</body>
+</html>
