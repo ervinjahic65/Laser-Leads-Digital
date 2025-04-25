@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Laser Leads Digital</title>
+
+    <script src="files/browser@4.js"></script>
+
+    <link rel="stylesheet" href="files/all.min.css" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="files/style.css">
+    <link rel="icon" type="image/png" href="files/favicon.png" sizes="16x16">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+    <p class="adv" style="position: absolute; z-index: 99999999; left: 50%; transform: translateX(-50%); text-align: center; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">
+        Publicidade
+    </p>
+    <nav class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="font-bold text-2xl text-blue-600 hover:text-blue-700 transition">
+                        <img class="logo" src="files/logo.png" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="hidden md:flex md:items-center md:space-x-6 lg:space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Recursos</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Como Funciona</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Depoimentos</a>
+                    <a href="#faq" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">Perguntas Frequentes</a>
+                    <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-300 shadow-sm">Contato</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Abrir menu principal</span>
+                        <i class="fas fa-bars block h-6 w-6 text-xl"></i>
+                        </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#features" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Recursos</a>
+                <a href="#how-it-works" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Como Funciona</a>
+                <a href="#testimonials" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Depoimentos</a>
+                <a href="#faq" class="text-gray-700 hover:bg-gray-100 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Perguntas Frequentes</a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                 <div class="px-5">
+                     <a href="#register" class="block w-full text-center bg-blue-600 text-white px-4 py-2 rounded-md text-base font-medium hover:bg-blue-700 transition duration-300 shadow-sm">Registre-se Agora</a>
+                 </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-white pt-24 pb-28 md:pt-32 md:pb-40">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-5 leading-tight tracking-tight">
+                Laser Leads Digital
+            </h1>
+            <p class="text-lg md:text-xl mb-10 text-blue-100 max-w-3xl mx-auto font-light">
+                Descubra conteúdo de vídeo de marcas relevantes para seus interesses e ganhe recompensas como dinheiro (R$) ou vales-presente. Laser Leads Digital oferece uma maneira fácil de utilizar seu tempo livre.
+            </p>
+            <a href="#register" class="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition duration-300 text-lg shadow-lg transform hover:scale-105">
+                Começar <i class="fas fa-arrow-right ml-2 text-sm"></i>
+            </a>
+        </div>
+    </header>
+
+    <section id="features" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                Por que ganhar com Laser Leads Digital?
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                    <div class="flex items-center mb-4">
+                         <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-dollar-sign text-2xl text-green-600"></i> </div>
+                         <h3 class="text-xl font-semibold text-gray-700">Ganhos Simples</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">Ganhe recompensas com esforço mínimo durante seu tempo livre. Assistir a anúncios relevantes ajuda você a acumular recompensas. É uma forma simples de aproveitar seus momentos livres.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                     <div class="flex items-center mb-4">
+                         <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-clock text-2xl text-blue-600"></i>
+                         </div>
+                         <h3 class="text-xl font-semibold text-gray-700">Ganhos Flexíveis</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">Assista e ganhe quando se ajustar à sua agenda, sem compromissos fixos. Use Laser Leads Digital durante seus deslocamentos, pausas ou tempo livre em casa. Adapte os ganhos à sua vida.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                     <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-film text-2xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-700">Conteúdo Relevante</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">Explore anúncios que podem se adaptar aos seus interesses (baseados em preferências opcionais). Nossa variedade visa tornar a visualização mais envolvente e potencialmente informativa.</p>
+                </div>
+
+                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                     <div class="flex items-center mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-check-circle text-2xl text-yellow-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-700">Simples e Acessível</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">Não são necessárias habilidades ou conhecimentos especializados. Se você pode assistir a um vídeo online, pode ganhar com Laser Leads Digital. Acessível para qualquer pessoa com uma conexão de internet estável.</p>
+                </div>
+
+                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                     <div class="flex items-center mb-4">
+                        <div class="bg-red-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-shield-alt text-2xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-700">Pagamentos Confiáveis</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">Confie em um processo de pagamento transparente e seguro. Receba suas recompensas ganhas de forma confiável através de métodos populares. (Aplicam-se tempos de processamento padrão, geralmente até 72 horas).</p>
+                </div>
+
+                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+                     <div class="flex items-center mb-4">
+                        <div class="bg-teal-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-users text-2xl text-teal-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-700">Comunidade de Apoio</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">Conecte-se com outros usuários em nosso espaço comunitário planejado. Compartilhe dicas, discuta experiências e apoiem-se mutuamente (Recursos da comunidade estão atualmente em desenvolvimento).</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="py-20 md:py-28 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                Começar é Simples
+            </h2>
+            <div class="relative">
+                 <div class="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-blue-200" style="z-index: 0;"></div>
+
+                <div class="relative flex flex-col md:flex-row justify-around items-start md:items-center gap-10 md:gap-8" style="z-index: 1;">
+
+                    <div class="text-center max-w-xs w-full md:w-auto bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                        <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-5 text-2xl font-bold shadow-lg ring-4 ring-blue-100">1</div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-700">Registre-se Grátis</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Crie sua conta Laser Leads Digital em apenas alguns momentos. É rápido, simples e totalmente grátis para participar.</p>
+                    </div>
+
+                    <div class="text-center max-w-xs w-full md:w-auto bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-6 md:mt-0">
+                        <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-5 text-2xl font-bold shadow-lg ring-4 ring-blue-100">2</div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-700">Assista a Anúncios</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Depois de fazer login, vá para a área 'Ganhe Recompensas'. Você pode explorar os anúncios de vídeo disponíveis e assistir aos que achar interessantes.</p>
+                    </div>
+
+                    <div class="text-center max-w-xs w-full md:w-auto bg-white p-6 rounded-lg shadow-md border border-gray-200 mt-6 md:mt-0">
+                         <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-5 text-2xl font-bold shadow-lg ring-4 ring-blue-100">3</div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-700">Ganhe Recompensas</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Você acumulará recompensas (pontos ou valor em R$) pelos anúncios que assistir. Quando atingir o valor mínimo, poderá resgatar facilmente seus ganhos.</p>
+                    </div>
+
+                </div>
+            </div>
+             <div class="text-center mt-16">
+                <a href="#register" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 text-lg shadow-md transform hover:scale-105">
+                    Pronto para Começar? Junte-se Grátis
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="potential" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+
+                <div class="lg:w-1/2 w-full">
+                     <img src="files/earn.jpg" alt="Ilustração mostrando o crescimento potencial dos ganhos" class="rounded-lg shadow-xl w-full h-auto object-cover border-4 border-blue-100">
+                </div>
+
+                <div class="lg:w-1/2 w-full">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+                        O que você pode ganhar realisticamente?
+                    </h2>
+                    <p class="text-gray-600 mb-5 text-lg leading-relaxed">
+                        Embora assistir a anúncios não substitua uma renda em tempo integral, é uma forma prática e simples de ganhar recompensas adicionais (como dinheiro R$ ou vales-presente) durante seu tempo livre, tempo que de outra forma você poderia passar navegando.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Seus ganhos potenciais dependem de fatores como a quantidade de anúncios disponíveis para você (que pode variar por região e perfil) e, o mais importante, a constância com que você interage com a plataforma.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Ganhe pontos ou valor direto por cada anúncio que assistir completamente.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-gift text-blue-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Resgate seu saldo acumulado por opções populares como dinheiro via Pix/PayPal ou diversos vales-presente (por exemplo, Americanas, iFood). Mais detalhes na seção de Pagamentos.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Fique atento a oportunidades de bônus, anúncios de maior pagamento por tempo limitado e recompensas por indicar amigos.</span>
+                        </li>
+                    </ul>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                O que nossos usuários dizem
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-100 transform hover:scale-105 transition-transform duration-300">
+                    <div class="flex items-center mb-4">
+                        <div>
+                            <p class="font-semibold text-gray-700">João Silva</p>
+                            <p class="text-sm text-yellow-500">★★★★★</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">"Estou realmente impressionado com este aplicativo. Assistir a anúncios pode ser surpreendentemente aceitável, e os pagamentos têm sido pontuais para mim. É uma boa maneira de ganhar um dinheiro extra no meu tempo livre."</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-100 transform hover:scale-105 transition-transform duration-300">
+                     <div class="flex items-center mb-4">
+                        <div>
+                            <p class="font-semibold text-gray-700">Maria Oliveira</p>
+                            <p class="text-sm text-yellow-500">★★★★★</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">"Estava um pouco cética no início, mas o Laser Leads Digital realmente superou minhas expectativas. O processo de ganho é transparente e simples. É uma excelente maneira de relaxar e ganhar simultaneamente."</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-100 transform hover:scale-105 transition-transform duration-300">
+                     <div class="flex items-center mb-4">
+                        <div>
+                            <p class="font-semibold text-gray-700">Pedro Santos</p>
+                            <p class="text-sm text-yellow-500">★★★★★</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">"Este é um aplicativo realmente útil. Gosto que você possa obter algo em troca por assistir anúncios. É fácil de navegar e as recompensas são decentes. Já recomendei a alguns amigos."</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="py-20 md:py-28 bg-gradient-to-br from-teal-50 to-cyan-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                Dicas para Ganhar Mais
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-200">
+                     <i class="fas fa-calendar-check text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">Participação Regular</h3>
+                    <p class="text-gray-600 text-sm">Participar regularmente, mesmo por períodos curtos, pode ajudar suas recompensas a se acumularem com o tempo. A atividade constante geralmente leva a melhores resultados.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-200">
+                     <i class="fas fa-bell text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">Notificações Opcionais</h3>
+                    <p class="text-gray-600 text-sm">Considere permitir notificações opcionais do aplicativo para saber sobre novas oportunidades de anúncios ou possíveis bônus quando surgirem.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-200">
+                     <i class="fas fa-user-check text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">Informações do Perfil</h3>
+                    <p class="text-gray-600 text-sm">Completar partes opcionais do seu perfil pode ajudar a conectá-lo com anúncios mais relevantes, que às vezes podem incluir diferentes níveis de recompensa.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md text-center border border-gray-200">
+                     <i class="fas fa-share-alt text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">Recompensas por Indicação</h3>
+                    <p class="text-gray-600 text-sm">Considere usar nosso programa de indicação. Você pode ganhar recompensas adicionais quando seus amigos se cadastrarem através do seu link e começarem a ganhar.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="py-20 md:py-28 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">
+                    Pronto para Começar a Ganhar?
+                </h2>
+                <form id="registration-form">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 mb-4">
+                        <div>
+                            <label for="first-name" class="block text-gray-700 text-sm font-medium mb-1">Nome</label>
+                            <input type="text" id="first-name" name="first-name" required autocomplete="given-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-400" placeholder="Digite seu nome">
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-gray-700 text-sm font-medium mb-1">Sobrenome</label>
+                            <input type="text" id="last-name" name="last-name" required autocomplete="family-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-400" placeholder="Digite seu sobrenome">
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <label for="email" class="block text-gray-700 text-sm font-medium mb-1">Endereço de E-mail</label>
+                        <input type="email" id="email" name="email" required autocomplete="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-400" placeholder="voce@exemplo.com">
+                    </div>
+                    <div class="mb-5">
+                        <label for="textarea" class="block text-gray-700 text-sm font-medium mb-1">Deixe sua mensagem</label>
+                        <textarea type="textarea" id="textarea" name="textarea" required autocomplete="textarea" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 placeholder-gray-400" placeholder="Sua mensagem ..."></textarea>
+                    </div>
+                     <div class="mb-6">
+                        <label class="flex items-center text-gray-600">
+                            <input type="checkbox" id="terms" name="terms" required class="mr-2 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                            <span class="text-sm select-none">Eu li e aceito os <a href="terms.html" target="_blank" class="text-blue-600 hover:underline font-medium">Termos e Condições</a> e a <a href="privacy.html" target="_blank" class="text-blue-600 hover:underline font-medium">Política de Privacidade</a>.</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300 text-lg shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Enviar
+                    </button>
+                </form>
+                <script>
+                    document.getElementById("registration-form").addEventListener("submit", function (e) {
+                        e.preventDefault();
+
+                        const formElement = document.getElementById("registration-form");
+
+                        formElement.innerHTML = '<img src="files/loading.gif" width="80" alt="Carregando...">';
+
+                        formElement.style.display = 'flex';
+                        formElement.style.justifyContent = 'center';
+                        formElement.style.alignItems = 'center';
+                        // formElement.style.minHeight = '150px'; // Manter ou remover altura mínima opcional
+
+                        setTimeout(() => {
+                            formElement.innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700; text-align: center;">Obrigado por se registrar na Laser Leads Digital. Nossa equipe entrará em contato com você em breve para discutir suas opções.</p>';
+
+                        }, 2000);
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <section id="security" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+
+            <div class="md:w-1/2">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Sua Segurança e Privacidade Importam</h2>
+                 <p class="text-gray-600 mb-4 leading-relaxed">Levamos a sério a segurança da sua conta e a privacidade dos seus dados. Estas são algumas medidas que tomamos para proteger suas informações:</p>
+                 <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6">
+                     <li><strong>Cadastro Seguro:</strong> São utilizadas práticas padrão da indústria durante os processos de cadastro e login.</li>
+                     <li><strong>Proteção de Dados:</strong> Cumprimos as regulamentações de privacidade de dados aplicáveis (como LGPD). Suas informações pessoais não são vendidas a anunciantes terceiros.</li>
+                     <li><strong>Dados Anonimizados:</strong> Quaisquer dados demográficos potencialmente utilizados para a segmentação de anúncios são tratados de forma anônima e agregada.</li>
+                     <li><strong>Políticas Transparentes:</strong> Nossa <a href="terms.html" target="_blank" class="text-blue-600 hover:underline">Política de Privacidade</a> descreve claramente como os dados são usados e protegidos.</li>
+                     <li><strong>Pagamentos Seguros:</strong> Fazemos parceria com processadores de pagamento confiáveis e utilizamos métodos seguros para transferir seus ganhos.</li>
+                 </ul>
+                 <p class="text-gray-700 font-medium">Concentre-se em ganhar, sabendo que suas informações são tratadas com responsabilidade.</p>
+            </div>
+
+             <div class="md:w-1/2 flex justify-center">
+                 <img src="files/security.jpg" alt="Ícone de escudo de segurança" class="rounded-full shadow-lg max-w-sm w-full h-auto object-cover border-4 border-cyan-100">
+             </div>
+
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 md:py-28 bg-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                Perguntas Frequentes
+            </h2>
+            <div class="space-y-5">
+
+                <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">Como começo a ganhar assistindo a anúncios?</span>
+                        <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">É simples: 1) Registre-se para uma conta gratuita na Laser Leads Digital. 2) Faça login e vá para a seção "Ganhe Recompensas" ou "Assistir Anúncios". 3) Explore os anúncios de vídeo disponíveis. 4) Clique em um anúncio e assista-o por completo (procure um cronômetro ou indicador de conclusão). 5) Seus ganhos (pontos ou valor em R$) são creditados em sua conta após a conclusão bem-sucedida.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">Quais dispositivos posso usar com a Laser Leads Digital?</span>
+                         <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">Você pode usar a maioria dos dispositivos modernos com uma conexão de internet estável e um navegador web, incluindo computadores de mesa (Windows, Mac, Linux), laptops, tablets (iPad, Android) e smartphones (iOS, Android). O site da Laser Leads Digital é responsivo para visualização otimizada em diferentes tamanhos de tela.</p>
+                    </div>
+                </div>
+
+                 <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">Quanto tempo leva o processamento do pagamento?</span>
+                         <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">Após solicitar um saque (assim que atingir o limite mínimo), nossa equipe o revisa e processa, geralmente dentro de 48 a 72 horas (2-3 dias úteis). Pagamentos eletrônicos (como Pix ou PayPal) geralmente chegam instantaneamente após o processamento, enquanto os códigos de vales-presente são normalmente enviados por e-mail dentro desse prazo.</p>
+                    </div>
+                </div>
+
+                 <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">Há alguma taxa para aderir ou ganhar?</span>
+                         <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">Não, absolutamente nenhuma. Juntar-se à Laser Leads Digital e ganhar recompensas é completamente grátis. Não há taxas ocultas, custos de assinatura ou taxas de adesão para participar ou sacar dinheiro. Nossa receita vem dos anunciantes.</p>
+                    </div>
+                </div>
+
+                 <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">Posso ganhar recompensas por indicar amigos?</span>
+                         <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">Sim! Temos um programa de indicação. Encontre seu link de indicação exclusivo no painel da sua conta e compartilhe-o. Quando seus amigos se cadastrarem usando seu link e começarem a ganhar, você receberá recompensas adicionais creditadas em sua conta.</p>
+                    </div>
+                </div>
+
+                 <div class="faq-item bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                    <button class="faq-question w-full flex justify-between items-center p-5 text-left hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out">
+                        <span class="text-lg font-medium text-gray-800">Por que nem sempre vejo muitos anúncios disponíveis?</span>
+                         <i class="fas fa-chevron-down faq-icon text-gray-500 transition-transform duration-300 transform"></i>
+                    </button>
+                    <div class="faq-answer p-5 bg-white border-t border-gray-200">
+                        <p class="text-gray-600 leading-relaxed">A disponibilidade de anúncios pode flutuar com base em fatores como sua localização, perfil demográfico (se fornecido), necessidades atuais dos anunciantes e hora do dia. Os anunciantes visam públicos específicos, então a disponibilidade varia. Verifique regularmente, pois novas campanhas publicitárias são lançadas com frequência.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-400 pt-16 pb-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-10">
+                <div class="lg:col-span-2">
+                    <h4 class="text-lg font-semibold text-white mb-4">Sobre a Laser Leads Digital</h4>
+                    <p class="text-sm leading-relaxed mb-4">Laser Leads Digital oferece uma plataforma simples onde os usuários podem ganhar recompensas assistindo a anúncios de vídeo. É uma maneira fácil de utilizar momentos livres e receber compensação como dinheiro (R$) ou vales-presente.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#features" class="hover:text-white hover:underline">Recursos</a></li>
+                        <li><a href="#how-it-works" class="hover:text-white hover:underline">Como Funciona</a></li>
+                        <li><a href="#testimonials" class="hover:text-white hover:underline">Depoimentos</a></li>
+                        <li><a href="#faq" class="hover:text-white hover:underline">Perguntas Frequentes</a></li>
+                        <li><a href="#register" class="hover:text-white hover:underline">Registrar</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Legal e Informações</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="terms.html" target="_blank" class="hover:text-white hover:underline">Termos e Condições</a></li>
+                        <li><a href="privacy.html" target="_blank" class="hover:text-white hover:underline">Política de Privacidade</a></li>
+                        <li><a href="about.html" target="_blank" class="hover:text-white hover:underline">Sobre Nós</a></li>
+                        <li><a href="contact.html" target="_blank" class="hover:text-white hover:underline">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Empresa</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <span class="comp-info">
+                                CNPJ - 084.784.001/8812-09 <br>
+                                Endereço - Av. Paulista, 10, Andar 5, Bela Vista, São Paulo - SP, 01310-100, Brasil <br>
+                                Telefone +55 11 9811-0981
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center text-sm">
+                <p>&copy; <span id="current-year">2025</span> Laser Leads Digital. Todos os direitos reservados.</p> <p class="mt-2 opacity-80">Aviso Legal: Os ganhos dependem da atividade do usuário, da disponibilidade de anúncios fornecida pelos anunciantes e do cumprimento dos termos de serviço. Laser Leads Digital não garante níveis de renda específicos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="files/script.js"></script>
+</body>
+</html>
